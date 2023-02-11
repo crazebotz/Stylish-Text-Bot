@@ -22,11 +22,11 @@ Press the button Deploy to heroku and give the values for the config vars. 👇
 
 ## Tools Used 🧰
 - Language Used [<img src="https://telegra.ph/file/960ed8709acaf8c68b894.jpg" width="100" height="30">](https://www.python.org/)
-- Frame Work [<img src="https://telegra.ph/file/804f06d1590f7619a63ed.jpg" width="100" height="40">](https://github.com/pyrogram/pyrogram)
+- Frame Work [<img src="https://telegra.ph/file/804f06d1590f7619a63ed.jpg" width="100" height="30">](https://github.com/pyrogram/pyrogram)
 
 ## Dev Details 👤:
 <p align="middle">
-<img src="https://telegra.ph/file/2a3eab01d1201f40b3ffc.jpg" width="150" height="150"><br>
+<img src="https://telegra.ph/file/2a3eab01d1201f40b3ffc.jpg" style="border-radius:10px;" width="150" height="150"><br>
 <img src="https://badgen.net/badge/Name/UTKARSH/FF33FF?icon=awesome&labelColor=0080FF"></a>
 <a href="https://telegram.dog/crazebots"><img src="https://img.shields.io/badge/Telegram-Link-blue.svg?logo=telegram"></a>
 <a href="https://github.com/crazebotz"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
