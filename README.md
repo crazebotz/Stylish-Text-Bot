@@ -26,8 +26,8 @@ Press the button Deploy to heroku and give the values for the config vars. 👇
 
 ## Dev Details 👤:
 <p align="middle">
-<img src="https://telegra.ph/file/2a3eab01d1201f40b3ffc.jpg" border-radius:"10px" width="150" height="150"><br>
-<img src="https://badgen.net/badge/Name/UTKARSH/FF33FF?icon=awesome&labelColor=0080FF"></a>
+<img src="https://telegra.ph/file/2a3eab01d1201f40b3ffc.jpg" border-radius="10" width="150" height="150"><br>
+<img src="https://badgen.net/badge/Name/THAKOR/FF33FF?icon=awesome&labelColor=0080FF"></a>
 <a href="https://telegram.dog/crazebots"><img src="https://img.shields.io/badge/Telegram-Link-blue.svg?logo=telegram"></a>
 <a href="https://github.com/crazebotz"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
 <a href="https://youtube.com/technologyrk"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
