@@ -3,7 +3,7 @@ This is a telegram bot help you to get stylish fonts and text.
 
 <a href="https://telegram.dog/stylishtext_Nsbot"><img src="https://img.shields.io/badge/Telegram-Bot-blue.svg?logo=telegram"></a>
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes/yellow?icon=github)](https://github.com/utkarsh212646/stylishtextgenbot)
-[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/allenspark10)
+[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/rahul_thakor)
 [![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/alpha_bot_support)
 
 ## Config Vars 🤖
@@ -18,7 +18,7 @@ This is a telegram bot help you to get stylish fonts and text.
 ## Deploy to heroku 🗳
 Press the button Deploy to heroku and give the values for the config vars. 👇
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/utkarsh212646/stylishtextgenbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/crazebotz/Stylish-Text-Bot)
 
 ## Tools Used 🧰
 - Language Used [<img src="https://telegra.ph/file/960ed8709acaf8c68b894.jpg" width="100" height="30">](https://www.python.org/)
@@ -28,8 +28,8 @@ Press the button Deploy to heroku and give the values for the config vars. 👇
 <p align="middle">
 <img src="https://telegra.ph/file/2a3eab01d1201f40b3ffc.jpg" width="150" height="150"><br>
 <img src="https://badgen.net/badge/Name/UTKARSH/FF33FF?icon=awesome&labelColor=0080FF"></a>
-<a href="https://telegram.dog/alpha_bot_support"><img src="https://img.shields.io/badge/Telegram-Link-blue.svg?logo=telegram"></a>
-<a href="https://github.com/utkarsh212646"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
-<a href="https://youtube.com/channel/UCq7mIbdbWUV-0qzIMjhYdpQ"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
+<a href="https://telegram.dog/crazebots"><img src="https://img.shields.io/badge/Telegram-Link-blue.svg?logo=telegram"></a>
+<a href="https://github.com/crazebotz"><img src="https://badgen.net/badge/Follow%20on%20/GitHub/80FF00?icon=github&labelColor=black"></a>
+<a href="https://youtube.com/technologyrk"><img src="https://img.shields.io/badge/YouTube-Channel-FF3333.svg?logo=youtube&logoColor=FF3333"></a>
 <p align="left">
 </p>
