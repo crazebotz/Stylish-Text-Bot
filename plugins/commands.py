@@ -1,39 +1,49 @@
-import os
-from config import Config
 from .fonts import Fonts
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.errors import UserNotParticipant
 
+buttons = [
+        [
+            InlineKeyboardButton('📣Update Channel🧑‍💻', url="https://t.me/crazebots")
+        ]
+    ]
 
 @Client.on_message(filters.command('start'))
-async def start(c, m):
-    owner = await c.get_users(int(Config.OWNER_ID))
-    owner_username = owner.username if owner.username else 'alpha_bot_support'
+async def start(_, m):
+        # start text
+    text = f"""Hlw! {m.from_user.mention(style='md')}.
 
-    # start text
-    text = f"""Hey! {m.from_user.mention(style='md')},
-
-💡 ** I am Stylish Font Bot**
+** I am Stylish Text Bot**
 
 `I can help you to get stylish fonts. Just send me some text and see magic.`
 
-**👲 Maintained By:** {owner.mention(style='md')}
+**👲 Made by :** @CrazeBots
 """
     # Buttons
-    buttons = [
-        [
-            InlineKeyboardButton('My Parent Team👨‍✈️', url="https://t.me/thealphabotz")
-        ]
-    ]
+   
     await m.reply_text(
         text=text,
         reply_markup=InlineKeyboardMarkup(buttons)
     )
 
+async def forceSub(app, msg):
+    try:
+        await app.get_chat_member('crazebots', msg.from_user.id)
+        return True
+    except UserNotParticipant:
+        await app.send_message(chat_id=msg.from_user.id, text="**Please Join My Update Channel To Use Me**", reply_markup=InlineKeyboardMarkup(buttons), reply_to_message_id=msg.id)
+        return False
+    except:
+        return True
 
 
 @Client.on_message(filters.private & filters.incoming & filters.text)
 async def style_buttons(c, m, cb=False):
+
+    result = await forceSub(c,m)
+    if result == False:
+        return
     buttons = [[
         InlineKeyboardButton('𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛', callback_data='style+typewriter'),
         InlineKeyboardButton('𝕆𝕦𝕥𝕝𝕚𝕟𝕖', callback_data='style+outline'),
@@ -110,7 +120,7 @@ async def nxt(c, m):
 
 @Client.on_callback_query(filters.regex('^style'))
 async def style(c, m):
-    await m.answer()
+    await m.answer("TEXT STYLED SUCCESSFULLY")
     cmd, style = m.data.split('+')
 
     if style == 'typewriter':
@@ -193,6 +203,6 @@ async def style(c, m):
         cls = Fonts.frozen
     new_text = cls(m.message.reply_to_message.text)
     try:
-        await m.message.edit_text(new_text, reply_markup=m.message.reply_markup)
+        await m.message.edit_text(f"<b>TAP to COPY ⤵️:\n\n</b>`{new_text}`", reply_markup=m.message.reply_markup)
     except:
         pass
