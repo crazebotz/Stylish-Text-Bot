@@ -1,9 +1,10 @@
 import os
+from os import environ as env
 
 class Config(object):
 
-      BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-      API_ID = int(os.environ.get("API_ID", 12345))
-      API_HASH = os.environ.get("API_HASH")
-      OWNER_ID = int(os.environ.get("OWNER_ID"))
+      BOT_TOKEN = env.get("BOT_TOKEN",'')
+      API_ID = int(env.get("API_ID",'1234'))
+      API_HASH = env.get("API_HASH",'')
+      OWNER_ID = 5294965763
 
