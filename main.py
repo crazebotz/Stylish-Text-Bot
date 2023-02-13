@@ -1,18 +1,19 @@
-from config import Config
+import os
 from pyrogram import Client 
 
+TOKEN=os.environ.get("BOT_TOKEN", ' ')
+API_ID = int(os.environ.get("API_ID",'1234'))
+API_HASH= os.environ.get("API_HASH", ' ')
 
-if __name__ == "__main__" :
-    plugins = dict(
-        root="plugins"
-    )
-    app = Client(
+app = Client(
         "Stylish_text_bot",
-        bot_token=Config.BOT_TOKEN,
-        api_id=Config.API_ID,
-        api_hash=Config.API_HASH,
-        plugins=plugins,
-        workers=100
+        bot_token=TOKEN,
+        api_id=API_ID,
+        api_hash=API_HASH,
+        plugins = dict(
+        root="plugins"),
+        workers=50
     )
-    print("BOT HAS RUNNING SUCCESFULLY")
-    app.run()
+
+print("BOT HAS RUNNING SUCCESFULLY")
+app.run()
