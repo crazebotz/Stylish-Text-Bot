@@ -1,12 +1,12 @@
 import os
 from pyrogram import Client, filters
+from font import Fonts
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.errors import UserNotParticipant
 
 TOKEN=os.environ.get("BOT_TOKEN", ' ')
 API_ID = int(os.environ.get("API_ID",'1234'))
 API_HASH= os.environ.get("API_HASH", ' ')
-from .fonts import Fonts
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.errors import UserNotParticipant
 
 
 app = Client(
