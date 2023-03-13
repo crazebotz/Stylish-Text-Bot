@@ -4,9 +4,9 @@ from font import Fonts
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserNotParticipant
 
-TOKEN=os.environ.get("BOT_TOKEN", ' ')
-API_ID = int(os.environ.get("API_ID",'1234'))
-API_HASH= os.environ.get("API_HASH", ' ')
+TOKEN=os.environ.get("BOT_TOKEN", '5852639486VV')
+API_ID = int(os.environ.get("API_ID",'28160559'))
+API_HASH= os.environ.get("API_HASH", 'ca5085c3f41b16df46dbeebed6e56081')
 
 
 app = Client(
@@ -14,10 +14,9 @@ app = Client(
         bot_token=TOKEN,
         api_id=API_ID,
         api_hash=API_HASH,
-        plugins = dict(
-        root="plugins"),
-        workers=50
+        workers=20
     )
+
 
 
 buttons = [
@@ -220,13 +219,13 @@ async def style(c, m):
         cls = Fonts.frozen
     new_text = cls(m.message.reply_to_message.text)
     try:
-        await m.message.edit_text(f"<b>TAP to COPY ⤵️:\n\n</b>`{new_text}`", reply_markup=m.message.reply_markup)
+        await m.message.edit_text(f"**TAP TO COPY:**\n\n`{new_text}`", reply_markup=m.message.reply_markup)
     except:
         pass
 
 
 
 
-
+os.system("clear")
 print("BOT HAS RUNNING SUCCESFULLY")
 app.run()
